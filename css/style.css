@@ -1,0 +1,17 @@
+body {
+    background: lightgreen;
+}
+
+#header-nav {
+  background-color: white;
+  border-radius: 0;
+  border: 0;
+}
+#header-logo {
+    margin: 6px;
+}
+#active {
+    border-bottom: 2px pink solid;
+    padding-bottom: 10px;
+    color: black;
+}
