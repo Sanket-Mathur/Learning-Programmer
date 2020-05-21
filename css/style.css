@@ -1,5 +1,39 @@
+@keyframes spin-s1 {
+    0% {
+        transform: rotateY(90deg) translateZ(80vh);
+    }
+    100% {
+        transform: rotateY(0deg) translateZ(0px);
+    }
+}
+@keyframes spin-f1 {
+    0% {
+        transform: rotateY(0deg) translateZ(0px);
+    }
+    100% {
+        transform: rotateY(-90deg) translateZ(80vh);
+    }
+}
+@keyframes spin-s2 {
+    0% {
+        transform: rotateY(-90deg) translateZ(80vh);
+    }
+    100% {
+        transform: rotateY(0deg) translateZ(0px);
+    }
+}
+@keyframes spin-f2 {
+    0% {
+        transform: rotateY(0deg) translateZ(0px);
+    }
+    100% {
+        transform: rotateY(90deg) translateZ(80vh);
+    }
+}
+
 body {
     background: lightgreen;
+    overflow-x: hidden;
 }
 
 #header-nav {
@@ -14,4 +48,75 @@ body {
     border-bottom: 2px pink solid;
     padding-bottom: 10px;
     color: black;
+}
+
+@media (max-width: 1199px) {
+    .titles {
+        height: 100%;
+    }
+    .init {
+        position: absolute;
+        left: 10%;
+        width: 80%;
+        background: white;
+        box-shadow: 2px 2px 5px black;
+        border: 1px black solid;
+        text-align: center;
+    }
+    .init h1 {
+        margin: 40px;
+        font-weight: bold;
+    }
+    #s1 {
+        top: 35%;
+    }
+    #s2 {
+        top: 54%;
+    }
+    #f1, #f2 {
+        opacity: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .titles {
+        height: 85vh;
+    }
+    .init {
+        position: absolute;
+        left: 10%;
+        width: 160vh;
+        background: white;
+        box-shadow: 2px 2px 5px black;
+        border: 1px black solid;
+        text-align: center;
+    }
+    .init h1 {
+        margin: 40px;
+        font-weight: bold;
+    }
+    #f1, #s1 {
+        top: 35%;
+    }
+    #s1{
+        transform: rotateY(90deg);
+        animation: spin-s1 4s ease-in-out 0.5s; 
+        animation-fill-mode: forwards;
+    }
+    #f1 {
+        animation: spin-f1 4s ease-in-out;
+        animation-fill-mode: forwards;
+    }
+    #f2, #s2 {
+        top: 54%;
+    }
+    #s2{
+        transform: rotateY(-90deg);
+        animation: spin-s2 4s ease-in-out 4.5s;
+        animation-fill-mode: forwards;
+    }
+    #f2 {
+        animation: spin-f2 4s ease-in-out 4s;
+        animation-fill-mode: forwards;
+    }
 }
