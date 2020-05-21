@@ -58,72 +58,40 @@ body {
     background: url(../images/background-lite.jpg) no-repeat;
     background-size: cover;
 }
-@media (max-width: 1199px) {
-    .init {
-        position: absolute;
-        left: 10%;
-        width: 80%;
-        background: white;
-        box-shadow: 2px 2px 5px black;
-        border: 1px black solid;
-        text-align: center;
-    }
-    .init h1 {
-        margin: 40px;
-        font-weight: bold;
-    }
-    #s1 {
-        top: 32%;
-    }
-    #s2 {
-        top: 55%;
-    }
-    #f1, #f2 {
-        opacity: 0;
-    }
+.init {
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    background: white;
+    box-shadow: 2px 2px 5px black;
+    border: 1px black solid;
+    text-align: center;
 }
-
+.init h1 {
+    margin: 40px;
+    font-weight: bold;
+}
+#f1, #s1 {
+    top: 35%;
+}
+#f2, #s2 {
+    top: 54%;
+}
+#f1, #f2 {
+    opacity: 0;
+}
 @media (max-width: 1199px) and (orientation: landscape) {
-    .init {
-        position: absolute;
-        left: 10%;
-        width: 80%;
-        background: white;
-        box-shadow: 2px 2px 5px black;
-        border: 1px black solid;
-        text-align: center;
-    }
     .init h1 {
-        margin: 15px;
-        font-weight: bold;
-    }
-    #s1 {
-        top: 35%;
-    }
-    #s2 {
-        top: 54%;
-    }
-    #f1, #f2 {
-        opacity: 0;
+        margin: 10px;
     }
 }
 
 @media (min-width: 1200px) {
     .init {
-        position: absolute;
-        left: 10%;
         width: 160vh;
-        background: white;
-        box-shadow: 2px 2px 5px black;
-        border: 1px black solid;
-        text-align: center;
     }
-    .init h1 {
-        margin: 40px;
-        font-weight: bold;
-    }
-    #f1, #s1 {
-        top: 33%;
+    #f1, #f2 {
+        opacity: 1;
     }
     #s1{
         transform: rotateY(90deg);
@@ -133,9 +101,6 @@ body {
     #f1 {
         animation: spin-f1 4s ease-in-out;
         animation-fill-mode: forwards;
-    }
-    #f2, #s2 {
-        top: 54%;
     }
     #s2{
         transform: rotateY(-90deg);
@@ -147,6 +112,7 @@ body {
         animation-fill-mode: forwards;
     }
 }
+
 #content1 {
     position: relative;
     top: 10vh;
