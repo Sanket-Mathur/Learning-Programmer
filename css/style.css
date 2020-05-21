@@ -71,6 +71,34 @@ body {
         top: 35%;
     }
     #s2 {
+        top: 55%;
+    }
+    #f1, #f2 {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 1199px) and (orientation: landscape) {
+    .titles {
+        height: 100%;
+    }
+    .init {
+        position: absolute;
+        left: 10%;
+        width: 80%;
+        background: white;
+        box-shadow: 2px 2px 5px black;
+        border: 1px black solid;
+        text-align: center;
+    }
+    .init h1 {
+        margin: 10px;
+        font-weight: bold;
+    }
+    #s1 {
+        top: 35%;
+    }
+    #s2 {
         top: 54%;
     }
     #f1, #f2 {
