@@ -32,14 +32,13 @@
 }
 
 body {
-    background: lightgreen;
     overflow-x: hidden;
 }
 
 #header-nav {
-  background-color: white;
-  border-radius: 0;
-  border: 0;
+    background-color: white;
+    border-radius: 0;
+    border: 0;
 }
 #header-logo {
     margin: 6px;
@@ -49,11 +48,17 @@ body {
     padding-bottom: 10px;
     color: black;
 }
-
+#titles {
+    position: relative;
+    top: 10vh;
+    height: 90vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: url(../images/background-lite.jpg) no-repeat;
+    background-size: cover;
+}
 @media (max-width: 1199px) {
-    .titles {
-        height: 100%;
-    }
     .init {
         position: absolute;
         left: 10%;
@@ -68,7 +73,7 @@ body {
         font-weight: bold;
     }
     #s1 {
-        top: 35%;
+        top: 32%;
     }
     #s2 {
         top: 55%;
@@ -79,9 +84,6 @@ body {
 }
 
 @media (max-width: 1199px) and (orientation: landscape) {
-    .titles {
-        height: 100%;
-    }
     .init {
         position: absolute;
         left: 10%;
@@ -92,7 +94,7 @@ body {
         text-align: center;
     }
     .init h1 {
-        margin: 10px;
+        margin: 15px;
         font-weight: bold;
     }
     #s1 {
@@ -107,9 +109,6 @@ body {
 }
 
 @media (min-width: 1200px) {
-    .titles {
-        height: 85vh;
-    }
     .init {
         position: absolute;
         left: 10%;
@@ -124,7 +123,7 @@ body {
         font-weight: bold;
     }
     #f1, #s1 {
-        top: 35%;
+        top: 33%;
     }
     #s1{
         transform: rotateY(90deg);
@@ -147,4 +146,18 @@ body {
         animation: spin-f2 4s ease-in-out 4s;
         animation-fill-mode: forwards;
     }
+}
+#content1 {
+    position: relative;
+    top: 10vh;
+    height: 100vh;
+}
+#readmore {
+    background: black;
+    color: white;
+    padding: 20px;
+    border: 40px white solid;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
 }
