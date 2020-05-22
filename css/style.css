@@ -48,10 +48,58 @@ body {
     padding-bottom: 10px;
     color: black;
 }
+#foot {
+    background: grey;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+#foot #subs {
+    margin-top: 10px;
+}
+#foot #subs h4 {
+    font-family: 'Cookie', cursive;
+    font-size: 350%;
+}
+#foot #subs #email {
+    font-size: 20px;
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-right: 0;
+}
+#foot #subs #submit {
+    font-size: 20px;
+    padding: 5px;
+    margin-left: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#foot #socials {
+    margin-top: 30px;
+}
+#foot #socials a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: inherit;
+}
+#foot #socials a:hover {
+    text-decoration: none;
+    color: black;
+}
+#foot #socials ul {
+    list-style: none;
+}
+#foot #text {
+    text-align: justify;
+    margin-top: 30px;
+}
+#foot hr {
+    width: 50%;
+}
 #titles {
-    position: relative;
     top: 10vh;
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -101,7 +149,6 @@ body {
     animation-fill-mode: forwards;
 }
 .content {
-    position: relative;
     top: 10vw;
 }
 #readmore {
