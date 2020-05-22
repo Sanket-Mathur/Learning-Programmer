@@ -1,6 +1,6 @@
 @keyframes spin-s1 {
     0% {
-        transform: rotateY(90deg) translateZ(80vh);
+        transform: rotateY(90deg) translateZ(40vw);
     }
     100% {
         transform: rotateY(0deg) translateZ(0px);
@@ -11,12 +11,12 @@
         transform: rotateY(0deg) translateZ(0px);
     }
     100% {
-        transform: rotateY(-90deg) translateZ(80vh);
+        transform: rotateY(-90deg) translateZ(40vw);
     }
 }
 @keyframes spin-s2 {
     0% {
-        transform: rotateY(-90deg) translateZ(80vh);
+        transform: rotateY(-90deg) translateZ(40vw);
     }
     100% {
         transform: rotateY(0deg) translateZ(0px);
@@ -27,7 +27,7 @@
         transform: rotateY(0deg) translateZ(0px);
     }
     100% {
-        transform: rotateY(90deg) translateZ(80vh);
+        transform: rotateY(90deg) translateZ(40vw);
     }
 }
 
@@ -61,7 +61,7 @@ body {
 .init {
     position: absolute;
     left: 10%;
-    width: 80%;
+    width: 80vw;
     background: white;
     box-shadow: 2px 2px 5px black;
     border: 1px black solid;
@@ -71,52 +71,38 @@ body {
     margin: 40px;
     font-weight: bold;
 }
+@media (max-width: 992px) and (orientation: landscape) {
+    .init h1 {
+        margin: 15px;
+    }
+}
 #f1, #s1 {
-    top: 35%;
+    top: 30vh;
 }
 #f2, #s2 {
-    top: 54%;
+    top: 49vh;
 }
-#f1, #f2 {
-    opacity: 0;
+#s1{
+    transform: rotateY(90deg);
+    animation: spin-s1 4s ease-in-out 0.5s; 
+    animation-fill-mode: forwards;
 }
-@media (max-width: 1199px) and (orientation: landscape) {
-    .init h1 {
-        margin: 10px;
-    }
+#f1 {
+    animation: spin-f1 4s ease-in-out;
+    animation-fill-mode: forwards;
 }
-
-@media (min-width: 1200px) {
-    .init {
-        width: 160vh;
-    }
-    #f1, #f2 {
-        opacity: 1;
-    }
-    #s1{
-        transform: rotateY(90deg);
-        animation: spin-s1 4s ease-in-out 0.5s; 
-        animation-fill-mode: forwards;
-    }
-    #f1 {
-        animation: spin-f1 4s ease-in-out;
-        animation-fill-mode: forwards;
-    }
-    #s2{
-        transform: rotateY(-90deg);
-        animation: spin-s2 4s ease-in-out 4.5s;
-        animation-fill-mode: forwards;
-    }
-    #f2 {
-        animation: spin-f2 4s ease-in-out 4s;
-        animation-fill-mode: forwards;
-    }
+#s2{
+    transform: rotateY(-90deg);
+    animation: spin-s2 4s ease-in-out 4.5s;
+    animation-fill-mode: forwards;
 }
-
-#content1 {
+#f2 {
+    animation: spin-f2 4s ease-in-out 4s;
+    animation-fill-mode: forwards;
+}
+.content {
     position: relative;
-    top: 10vh;
-    height: 100vh;
+    top: 10vw;
 }
 #readmore {
     background: black;
@@ -126,4 +112,10 @@ body {
     text-align: center;
     text-decoration: none;
     font-weight: bold;
+}
+#content2 {
+    background-color: lightgreen;
+}
+#content2 #readmore {
+    border-color: lightgreen;
 }
