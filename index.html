@@ -13,12 +13,12 @@
         <script src="js/bootstrap.min.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet"> 
     </head>
-    <body>
+    <body id="index">
         <header>
             <nav id="header-nav" class="navbar navbar-default navbar-fixed-top">
                 <div class="container-fluid">
                     <div class="navbar-header">
-                        <a href="index.html">
+                        <a id="logo-link" href="index.html">
                             <img src="logo/logo.png" height="50" id="header-logo" alt="Logo Image">
                         </a>
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
@@ -31,7 +31,7 @@
                     <div id="collapsable-nav" class="collapsable navbar-collapse collapse">
                         <ul id="nav-list" class="nav navbar-nav navbar-right">
                             <li><a href="index.html" id="active">HOME</a></li>
-                            <li><a href="index.html">BLOGS</a></li>
+                            <li><a href="blogs.html">BLOGS</a></li>
                             <li><a href="index.html">ABOUT</a></li>
                         </ul>
                     </div>
@@ -57,7 +57,7 @@
             <p>15/05/2020</p>
             <div class="row">
                 <h4 class="col-md-8 col-sm-12">As a developer you might be aware of some fields in software development that you want to explore but you might be confused on which one to select as a career pathway. Each field of software development is unique in its own way and uses different languages, frameworks and tools to meet the requirements. Here are several different fields that will help you to understand their particular roles and which one you want to dive into.</h4>
-                <a href="index.html" id="readmore" class="col-md-4 col-sm-12 col-xs-12">READ MORE</a>
+                <a href="index.html" class="col-md-4 col-sm-12 col-xs-12 readmore">READ MORE</a>
             </div>
         </div>
         <div id="content2" class="container-fluid content">
@@ -65,7 +65,7 @@
             <p>15/05/2020</p>
             <div class="row">
                 <h4 class="col-md-8 col-sm-12">As a developer you might be aware of some fields in software development that you want to explore but you might be confused on which one to select as a career pathway. Each field of software development is unique in its own way and uses different languages, frameworks and tools to meet the requirements. Here are several different fields that will help you to understand their particular roles and which one you want to dive into.</h4>
-                <a href="index.html" id="readmore" class="col-md-4 col-sm-12 col-xs-12">READ MORE</a>
+                <a href="index.html" class="col-md-4 col-sm-12 col-xs-12 readmore">READ MORE</a>
             </div>
         </div>
         <div id="content3" class="container-fluid content">
@@ -73,7 +73,29 @@
             <p>15/05/2020</p>
             <div class="row">
                 <h4 class="col-md-8 col-sm-12">As a developer you might be aware of some fields in software development that you want to explore but you might be confused on which one to select as a career pathway. Each field of software development is unique in its own way and uses different languages, frameworks and tools to meet the requirements. Here are several different fields that will help you to understand their particular roles and which one you want to dive into.</h4>
-                <a href="index.html" id="readmore" class="col-md-4 col-sm-12 col-xs-12">READ MORE</a>
+                <a href="index.html" class="col-md-4 col-sm-12 col-xs-12 readmore">READ MORE</a>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <section class="sub-divs">
+                        <h3 class="text-center">Learn-Projects</h3>
+                        <a>
+                            <h4><img src="images/Learn-Projects/c.png" height="50" alt="Symbol of C"> Learn-C</h4>
+                        </a>
+                        <a>
+                            <h4><img src="images/Learn-Projects/python.png" height="50" alt="Logo of Python"> Learn-Python</h4>
+                        </a>
+                    </section>
+                </div>
+                <div class="col-md-6">
+                    <section class="sub-divs">
+                        <h3 class="text-center">About Me</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed augue sit amet tellus vulputate consectetur ac vel velit. Maecenas eu lectus ac arcu scelerisque sagittis. Donec scelerisque quis risus id venenatis.</p>
+                        <a id="portfolio">VISIT PORTFOLIO</a>
+                    </section>
+                </div>
             </div>
         </div>
         <footer id="foot" class="panel-footer">
@@ -100,7 +122,7 @@
                 </section>
             </div>
             <section id="copy">
-                <p>&copy; Coopyright Sanket Mathur 2020</p>
+                <p>&copy; Copyright Sanket Mathur 2020</p>
             </section>
         </footer>
     </body>

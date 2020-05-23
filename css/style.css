@@ -43,6 +43,21 @@ body {
 #header-logo {
     margin: 6px;
 }
+#logo-link {
+    position: relative;
+    margin-left: 45%;
+}
+@media (min-width: 768px) {
+    .navbar-header {
+        position: relative;
+        left: 42%;
+    }
+}
+@media (min-width: 992px) {
+    .navbar-header {
+        left: 45%;
+    }
+}
 #active {
     border-bottom: 2px pink solid;
     padding-bottom: 10px;
@@ -124,6 +139,11 @@ body {
         margin: 15px;
     }
 }
+@media (max-height: 620px) {
+    .init h1 {
+        margin: 25px;
+    }
+}
 #f1, #s1 {
     top: 30vh;
 }
@@ -151,7 +171,10 @@ body {
 .content {
     top: 10vw;
 }
-#readmore {
+.content h4 {
+    text-align: justify;
+}
+.readmore {
     background: black;
     color: white;
     padding: 20px;
@@ -168,6 +191,48 @@ body {
 #content2 {
     background-color: lightgreen;
 }
-#content2 #readmore {
+#content2 .readmore {
     border-color: lightgreen;
+}
+.sub-divs {
+    border: 5px solid black;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 20px;
+}
+.sub-divs #portfolio {
+    color: inherit;
+}
+
+/* Blogs Page */
+#blogs .blogs-cont {
+    margin-top: 100px;
+}
+#blogs .blogs-cont a {
+    text-decoration: none;
+    color: inherit;
+}
+#blogs .blogs-cont a:hover section {
+    box-shadow: 5px 5px 0px red;
+}
+#blogs .blogs-cont a section {
+    background: #e6e6e6;
+    border: 2px solid black;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px green;
+}
+#blogs .blogs-cont a section p {
+    text-align: justify;
+}
+@media (min-width: 992px) {
+    #blogs .blogs-cont a section {
+        height: 330px;
+    }
+}
+@media (min-width: 768px) and (max-width:991px) {
+    #blogs .blogs-cont a section {
+        height: 290px;
+    }
 }
