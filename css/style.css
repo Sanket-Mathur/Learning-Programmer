@@ -30,6 +30,22 @@
         transform: rotateY(90deg) translateZ(40vw);
     }
 }
+@keyframes spin-logo {
+    0% {
+        transform: rotateX(90deg) translateY(-100vh);
+    }
+    100% {
+        transform: rotateX(0deg) translateY(0);
+    }
+}
+@keyframes background-light {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
 
 body {
     overflow-x: hidden;
@@ -63,6 +79,48 @@ body {
     padding-bottom: 10px;
     color: black;
 }
+#toggle {
+    position: absolute;
+    margin-top: 17px;
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+    cursor: pointer;
+}
+#toggle input {
+    opacity: 0;
+} 
+#toggle #slider {
+    position: absolute;
+    background: #004466;
+    height: 20px;
+    width: 20px;
+    margin-top: 5px;
+    margin-left: -10px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+#toggle #box {
+    position: absolute;
+    height: 30px;
+    width: 60px;
+    margin-left: -15px;
+    border: 2px #004466 solid;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+#toggle input:checked ~ #slider {
+    margin-left: 20px;
+    background: white;
+}
+#toggle input:checked ~ #box {
+    background: #004466;
+    border: 2px white solid;
+}
+#toggle #moon {
+    position: absolute;
+    margin-left: 47px;
+}
 #foot {
     background: grey;
     width: 100%;
@@ -71,6 +129,11 @@ body {
 }
 #foot #subs {
     margin-top: 10px;
+}
+#foot #subs input:hover, input:focus {
+    transition: background .5s linear;
+    background: #e6ccff;
+    border: 2px #cc99ff solid;
 }
 #foot #subs h4 {
     font-family: 'Cookie', cursive;
@@ -112,16 +175,20 @@ body {
 #foot hr {
     width: 50%;
 }
-#titles {
+/* Index Page */
+#index #titles {
     top: 10vh;
     height: 100vh;
     width: 100%;
     margin: 0;
     padding: 0;
-    background: url(../images/background-lite.jpg) no-repeat;
+    background-image: url(../images/background-light.jpg);
+    background-position: 0;
     background-size: cover;
+    animation: background-light 1s ease-in;
+    animation-fill-mode: forwards;
 }
-.init {
+#index .init {
     position: absolute;
     left: 10%;
     width: 80vw;
@@ -130,77 +197,93 @@ body {
     border: 1px black solid;
     text-align: center;
 }
-.init h1 {
-    margin: 40px;
+#index .init h1 {
+    margin: 20px;
     font-weight: bold;
-}
-@media (max-width: 992px) and (orientation: landscape) {
-    .init h1 {
-        margin: 15px;
-    }
+    font-family: "Cookie", cursive;
+    font-size: 70px;
 }
 @media (max-height: 620px) {
-    .init h1 {
-        margin: 25px;
+    #index .init h1 {
+        font-size: 60px;
+        margin: 0px;
     }
 }
-#f1, #s1 {
-    top: 30vh;
+#index #f1, #s1 {
+    top: 40vh;
 }
-#f2, #s2 {
-    top: 49vh;
+#index #f2, #s2 {
+    top: 59vh;
 }
-#s1{
+#index #s1{
     transform: rotateY(90deg);
-    animation: spin-s1 4s ease-in-out 0.5s; 
+    animation: spin-s1 2s ease-in-out 1.3s; 
     animation-fill-mode: forwards;
 }
-#f1 {
-    animation: spin-f1 4s ease-in-out;
+#index #f1 {
+    animation: spin-f1 2s ease-in-out 1s;
     animation-fill-mode: forwards;
 }
-#s2{
+#index #s2{
     transform: rotateY(-90deg);
-    animation: spin-s2 4s ease-in-out 4.5s;
+    animation: spin-s2 2s ease-in-out 3.3s;
     animation-fill-mode: forwards;
 }
-#f2 {
-    animation: spin-f2 4s ease-in-out 4s;
+#index #f2 {
+    animation: spin-f2 2s ease-in-out 3s;
     animation-fill-mode: forwards;
 }
-.content {
+#index #flip-logo {
+    opacity: 0;
+}
+@media (min-width: 992px) {
+    #index #flip-logo {
+        opacity: 1;
+        position: absolute;
+        top: 40vh;
+        left: 10%;
+        height: 36.5vh;
+        transform: rotateX(90deg) translateY(-100vh);
+        border: 2px black solid;
+        animation: spin-logo 1s ease-in 5s;
+        animation-fill-mode: forwards;
+    }
+}
+#index .content {
     top: 10vw;
 }
-.content h4 {
+#index .content h4 {
     text-align: justify;
 }
-.readmore {
+#index .readmore-contain {
+    padding: 30px;
+}
+#index .readmore {
     background: black;
     color: white;
     padding: 20px;
-    border: 40px white solid;
-    text-align: center;
+    display: block;
     text-decoration: none;
     font-weight: bold;
 }
 @media (max-width: 991px) {
-    #content1 {
+    #index #content1 {
         margin-top: 5vh;
     }
 }
-#content2 {
+#index #content2 {
     background-color: lightgreen;
 }
-#content2 .readmore {
+#index #content2 .readmore {
     border-color: lightgreen;
 }
-.sub-divs {
+#index .sub-divs {
     border: 5px solid black;
     margin: 20px;
     padding: 30px;
     border-radius: 20px;
 }
-.sub-divs #portfolio {
+#index .sub-divs #portfolio {
     color: inherit;
 }
 
