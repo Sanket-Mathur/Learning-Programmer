@@ -263,6 +263,7 @@ body {
 }
 #index .content {
     top: 10vw;
+    background-color: lightgreen;
 }
 #index .content h4 {
     text-align: justify;
@@ -277,6 +278,11 @@ body {
     display: block;
     text-decoration: none;
     font-weight: bold;
+    transition: 0.5s;
+}
+#index .readmore:hover {
+    background: orange;
+    color: black;
 }
 @media (max-width: 991px) {
     #index #content1 {
@@ -284,7 +290,7 @@ body {
     }
 }
 #index #content2 {
-    background-color: lightgreen;
+    background-color: white;
 }
 #index #content2 .readmore {
     border-color: lightgreen;
@@ -300,6 +306,13 @@ body {
 }
 #index .sub-divs #portfolio {
     color: inherit;
+}
+#index #learn a {
+    color: black;
+    text-decoration: none;
+}
+#index #learn a:hover {
+    color: #8c8c8c;
 }
 
 /* Blogs Page */
