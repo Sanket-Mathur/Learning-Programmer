@@ -75,9 +75,13 @@ body {
     }
 }
 #active {
-    border-bottom: 2px pink solid;
-    padding-bottom: 10px;
     color: black;
+}
+@media (min-width: 768px) {
+    #active {
+        border-bottom: 2px pink solid;
+        padding-bottom: 10px;
+    }
 }
 #toggle {
     position: absolute;
@@ -149,12 +153,17 @@ body {
 #foot #subs #submit {
     font-size: 20px;
     padding: 5px;
-    margin-left: 0px;
+    margin-left: 0;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+@media (max-width: 767px) {
+    #foot #subs input {
+        font-size: 13px;
+    }
+}
 #foot #socials {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 #foot #socials a {
     margin-right: 20px;
@@ -174,6 +183,9 @@ body {
 }
 #foot hr {
     width: 50%;
+}
+#foot #copy {
+    margin-top: 20px;
 }
 /* Index Page */
 #index #titles {
@@ -283,6 +295,9 @@ body {
     padding: 30px;
     border-radius: 20px;
 }
+#index .sub-divs img {
+    margin-left: 5vw;
+}
 #index .sub-divs #portfolio {
     color: inherit;
 }
@@ -318,4 +333,14 @@ body {
     #blogs .blogs-cont a section {
         height: 290px;
     }
+}
+
+/* About Page */
+#about #cont {
+    margin-top: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+#about #cont h4 {
+    font-weight: bold;
 }
