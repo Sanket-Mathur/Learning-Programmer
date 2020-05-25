@@ -375,3 +375,19 @@ body {
 #blog-page #cont h1, h3, h4 {
     font-weight: bold;
 }
+#blog-page textarea {
+    resize: none;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    border-radius: 10px 10px 10px 0;
+    padding: 10px;
+    margin-bottom: 0;
+    display: inline;
+}
+#blog-page #suggest-sub {
+    margin-top: -5px;
+    background: white;
+    border-radius: 0 0 10px 10px;
+    padding: 5px 10px;
+}
