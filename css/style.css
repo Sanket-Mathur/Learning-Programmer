@@ -128,7 +128,7 @@ body {
 #foot {
     background: grey;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 40px;
     text-align: center;
 }
 #foot #subs {
@@ -141,6 +141,7 @@ body {
 }
 #foot #subs h4 {
     font-family: 'Cookie', cursive;
+    font-weight: 100;
     font-size: 350%;
 }
 #foot #subs #email {
@@ -355,5 +356,21 @@ body {
     font-size: 20px;
 }
 #about #cont h4 {
+    font-weight: bold;
+}
+
+/* Blog Posts */
+#blog-page {
+    background-color: #f2f2f2;
+}
+#blog-page #cont {
+    margin-top: 100px;
+}
+#blog-page #cont p {
+    margin: 0 20px 0 20px;
+    font-size: 17px;
+    text-align: justify;
+}
+#blog-page #cont h1, h3, h4 {
     font-weight: bold;
 }
