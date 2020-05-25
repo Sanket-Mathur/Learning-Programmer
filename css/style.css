@@ -159,7 +159,7 @@ body {
     border-bottom-right-radius: 10px;
 }
 @media (max-width: 767px) {
-    #foot #subs input {
+    #foot #subs #email, #foot #subs #submit {
         font-size: 13px;
     }
 }
