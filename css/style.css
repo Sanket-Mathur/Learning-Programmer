@@ -55,9 +55,14 @@ body {
     background-color: white;
     border-radius: 0;
     border: 0;
+    transition: 0.5s;
+}
+#header-nav.styledark {
+    background-color: #004466;
 }
 #header-logo {
     margin: 6px;
+    border-radius: 25px;
 }
 #logo-link {
     position: relative;

@@ -5,13 +5,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="keywords" content="learning programmer, programming blogs, blogs for students">
-        <title>Learning Programmer</title>
+        <title>Learning Programmer - Blogs by Sanket Mathur</title>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel = "icon" href="logo/logo.png" type = "image/x-icon"> 
         <script src="js/jquery-2.1.4.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet"> 
+        <script src="js/script.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
     </head>
     <body id="index">
         <header>
@@ -19,14 +20,14 @@
                 <div class="container-fluid">
                     <label id="toggle">
                         <img src="images/sun.png" height="30" alt="light mode" id="sun">
-                        <input type="checkbox">
+                        <input type="checkbox" id="check" onclick="DarkMode()">
                         <span id="box"></span>
                         <span id="slider"></span>
                         <img src="images/moon.png" height="30" alt="dark mode" id="moon">
                     </label>
                     <div class="navbar-header">
                         <a id="logo-link" href="index.html">
-                            <img src="logo/logo.png" height="50" id="header-logo" alt="Logo Image">
+                            <img src="logo/logo.jpg" height="50" id="header-logo" alt="Logo Image">
                         </a>
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
                             <span class="sr-only">Toggle navigation</span>
