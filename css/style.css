@@ -46,6 +46,39 @@
         opacity: 100%;
     }
 }
+@keyframes neon-glow {
+    0% { text-shadow: 0 0 0 white; }
+    5% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    7% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    8% { text-shadow: 0 0 0 white; }
+    29% { text-shadow: 0 0 0 white; }
+    30% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    32% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    33% { text-shadow: 0 0 0 white; }
+    69% { text-shadow: 0 0 0 white; }
+    70% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    72% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    73% { text-shadow: 0 0 0 white; }
+    94% { text-shadow: 0 0 0 white; }
+    98% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    100% {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
 
 body {
     overflow-x: hidden;
@@ -255,9 +288,16 @@ body.styledark {
 #index #f2, #s2 {
     top: 59vh;
 }
+#index.styledark .init {
+    background: #004466;
+}
+#index.styledark .init h1 {
+    animation: neon-glow 1s linear 1s;
+    animation-fill-mode: forwards;
+}
 #index #s1{
     transform: rotateY(90deg);
-    animation: spin-s1 2s ease-in-out 1.3s; 
+    animation: spin-s1 2s ease-in-out 1s; 
     animation-fill-mode: forwards;
 }
 #index #f1 {
@@ -279,7 +319,9 @@ body.styledark {
 @media (min-width: 992px) {
     #index #flip-logo {
         opacity: 1;
+        overflow-y: hidden;
         position: absolute;
+        background-color: white;
         top: 40vh;
         left: 10%;
         height: 36.5vh;
@@ -288,12 +330,15 @@ body.styledark {
         animation: spin-logo 1s ease-in 5s;
         animation-fill-mode: forwards;
     }
+    #index.styledark #flip-logo {
+        background-color: #004466;
+    }
 }
 #index .content {
     background-color: lightgreen;
 }
 #index.styledark .content {
-    background-color: #106610/*#993d00*/;
+    background-color: #106610;
     color: white;
 }
 #index .content h4 {
