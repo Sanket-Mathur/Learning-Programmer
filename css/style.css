@@ -297,7 +297,7 @@ body.styledark {
 }
 #index #s1{
     transform: rotateY(90deg);
-    animation: spin-s1 2s ease-in-out 1s; 
+    animation: spin-s1 2s ease-in-out 1.3s; 
     animation-fill-mode: forwards;
 }
 #index #f1 {
