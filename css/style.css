@@ -38,7 +38,7 @@
         transform: rotateX(0deg) translateY(0);
     }
 }
-@keyframes background-light {
+@keyframes background-load {
     0% {
         opacity: 0;
     }
@@ -50,6 +50,10 @@
 body {
     overflow-x: hidden;
 }
+body.styledark {
+    background-color: #004466;
+    color: white;
+}
 
 #header-nav {
     background-color: white;
@@ -57,7 +61,7 @@ body {
     border: 0;
     transition: 0.5s;
 }
-#header-nav.styledark {
+.styledark #header-nav {
     background-color: #004466;
 }
 #header-logo {
@@ -67,6 +71,12 @@ body {
 #logo-link {
     position: relative;
     margin-left: 45%;
+}
+.styledark #header-nav li a {
+    color: #cccccc;
+}
+.styledark #header-nav li a:hover {
+    color: white;
 }
 @media (min-width: 768px) {
     .navbar-header {
@@ -81,6 +91,9 @@ body {
 }
 #active {
     color: black;
+}
+.styledark #header-nav #active {
+    color: white;
 }
 @media (min-width: 768px) {
     #active {
@@ -157,6 +170,9 @@ body {
     border-bottom-left-radius: 10px;
     margin-right: 0;
 }
+.styledark #foot #subs input {
+    background: #004466;
+}
 #foot #subs #submit {
     font-size: 20px;
     padding: 5px;
@@ -187,6 +203,8 @@ body {
 #foot #text {
     text-align: justify;
     margin-top: 30px;
+    font-family: cursive;
+    font-size: 16px;
 }
 #foot hr {
     width: 50%;
@@ -204,8 +222,11 @@ body {
     background-image: url(../images/background-light.jpg);
     background-position: 0;
     background-size: cover;
-    animation: background-light 1s ease-in;
+    animation: background-load 1s ease-in;
     animation-fill-mode: forwards;
+}
+#index.styledark #titles {
+    background-image: url(../images/background-dark.jpg);
 }
 #index .init {
     position: absolute;
@@ -269,11 +290,15 @@ body {
     }
 }
 #index .content {
-    top: 10vw;
     background-color: lightgreen;
+}
+#index.styledark .content {
+    background-color: #106610/*#993d00*/;
+    color: white;
 }
 #index .content h4 {
     text-align: justify;
+    font-weight: 100;
 }
 #index .readmore-contain {
     padding: 30px;
@@ -291,15 +316,13 @@ body {
     background: orange;
     color: black;
 }
-@media (max-width: 991px) {
-    #index #content1 {
-        margin-top: 5vh;
-    }
-}
 #index #content2 {
     background-color: white;
 }
-#index #content2 .readmore {
+#index.styledark #content2 {
+    background-color: #004466;
+}
+#index .content #content2 .readmore {
     border-color: lightgreen;
 }
 #index .sub-divs {
@@ -317,6 +340,9 @@ body {
 #index #learn a {
     color: black;
     text-decoration: none;
+}
+#index.styledark #learn a {
+    color: white;
 }
 #index #learn a:hover {
     color: #8c8c8c;

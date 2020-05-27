@@ -1,9 +1,18 @@
-function DarkMode() {
+document.addEventListener("DOMContentLoaded",
+
+    function (event) {
+        
+        function DarkMode() {
+            var checkbox = document.getElementById('check');
+            if(checkbox.checked == true) {   
+                document.querySelector('body').setAttribute("class", "styledark");
+            } else {
+                document.querySelector('body').removeAttribute("class");
+            }
+        }
     
-    var checkbox = document.getElementById('check');
-    if(checkbox.checked == true) {    
-        document.getElementById('header-nav').setAttribute("class", "navbar navbar-default navbar-fixed-top styledark");
-    } else {
-        document.getElementById('header-nav').setAttribute("class", "navbar navbar-default navbar-fixed-top");
-    } 
-}
+        document.querySelector("#check").onclick = DarkMode;
+    
+    }
+                          
+);
