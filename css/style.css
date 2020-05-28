@@ -191,6 +191,11 @@ body.styledark {
     background: #e6ccff;
     border: 2px #cc99ff solid;
 }
+.styledark #foot #subs input:hover, input:focus {
+    transition: background .5s linear;
+    background: #e6ccff;
+    border: 2px #cc99ff solid;
+}
 #foot #subs h4 {
     font-family: 'Cookie', cursive;
     font-weight: 100;
@@ -291,9 +296,17 @@ body.styledark {
 #index.styledark .init {
     background: #004466;
 }
-#index.styledark .init h1 {
-    animation: neon-glow 1s linear 1s;
-    animation-fill-mode: forwards;
+@media (min-width: 992px) {
+    #index.styledark .init h1 {
+        color: #d9d9d9;
+        animation: neon-glow 1s linear 1s;
+        animation-fill-mode: forwards;
+    }
+}
+@media (max-width: 991px) {
+    #index.styledark .init h1 {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
 }
 #index #s1{
     transform: rotateY(90deg);
