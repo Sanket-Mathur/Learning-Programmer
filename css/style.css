@@ -425,6 +425,9 @@ body.styledark {
     border-radius: 10px;
     box-shadow: 5px 5px 0px green;
 }
+#blogs.styledark .blogs-cont a section {
+    background: #333333;
+}
 #blogs .blogs-cont a section p {
     text-align: justify;
 }
@@ -445,6 +448,9 @@ body.styledark {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
 }
+#about.styledark a {
+    color: #b3ffb3;
+}
 #about #cont h4 {
     font-weight: bold;
 }
@@ -452,6 +458,9 @@ body.styledark {
 /* Blog Posts */
 #blog-page {
     background-color: #f2f2f2;
+}
+#blog-page.styledark {
+    background-color: #006699;
 }
 #blog-page #cont {
     margin-top: 100px;
@@ -479,4 +488,7 @@ body.styledark {
     background: white;
     border-radius: 0 0 10px 10px;
     padding: 5px 10px;
+}
+#blog-page.styledark #suggest-sub, textarea {
+    color: black;
 }
