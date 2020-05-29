@@ -223,6 +223,9 @@ body.styledark {
         font-size: 13px;
     }
 }
+#foot #subs #textAfterSubscribing {
+    margin-top: 5px;
+}
 #foot #socials {
     margin-top: 20px;
 }
