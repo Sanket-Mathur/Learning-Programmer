@@ -30,6 +30,22 @@ document.addEventListener("DOMContentLoaded",
     
         document.querySelector("#submit").onclick = validateEMAIL
     
+        function getTopics() {
+            
+            var text = document.querySelector("textarea");
+            
+            if (text.value.length >= 3) {
+                text.value = "Thank you for submitting your topic ideas. We might upload post related to it in the next 2 months.";
+            } else {
+                alert('Please write something before submitting');
+            }
+            
+            return false;
+            
+        }
+    
+        document.querySelector("#suggest-sub").onclick = getTopics;
+    
     }
                           
 );
