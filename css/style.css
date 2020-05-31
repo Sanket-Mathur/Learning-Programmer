@@ -80,7 +80,7 @@
     }
 }
 
-html, body {
+body {
     width: 100%;
     overflow-x: hidden;
 }
@@ -457,6 +457,9 @@ body.styledark {
 }
 #about #cont h4 {
     font-weight: bold;
+}
+#about #email-link {
+    font-size: 15px;
 }
 
 /* Blog Posts */

@@ -62,3 +62,18 @@ $(function () {
     });
     
 });
+
+var MSG = `
+
+Learn           LearningProgram
+Learn           Learn      Learn
+Learn           Learn        Learn
+Learn           Learn      Learn
+Learn           LearningProgram
+Learn           Learn
+LearningProgra	Learn
+LearningProgra	Learn
+
+`;
+console.log(MSG);
+console.log('Welcome Developers!\n\nHere are the technologies that I am using for building this website\n\nFront-End\n\n• HTML\n• CSS\n• Javascript\n• The designs are self made with use of Bootstrap to make the website responsive\n• jQuery is used to fix some small issues and is used by the Bootstrap package\n\nBack-End\n\n• Under Development\n\nCheck the link below to check out all the front end code\nhttps://github.com/Sanket-Mathur/Learning-Programmer/')
