@@ -462,6 +462,29 @@ body.styledark {
     font-size: 15px;
 }
 
+/* Unsubscribe Page*/
+#unsub #un {
+    margin: 150px 0 100px 0;
+    display: block;
+}
+#unsub #un #em {
+    width: 100%;
+    font-size: 20px;
+    border-radius: 10px;
+}
+#unsub #un select {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+@media (min-width: 768px) {
+    #unsub #un select {
+        font-size: 20px;
+    }
+}
+#unsub #un #final {
+    border-radius: 0 0 10px 10px;
+}
+
 /* Blog Posts */
 #blog-page {
     background-color: #f2f2f2;
