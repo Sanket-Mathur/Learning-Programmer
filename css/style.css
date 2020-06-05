@@ -95,6 +95,9 @@ body.styledark {
     border: 0;
     transition: 0.5s;
 }
+div.navbar-header {
+    height: 60px;
+}
 .styledark #header-nav {
     background-color: #004466;
 }
@@ -389,7 +392,7 @@ body.styledark {
 }
 #index .sub-divs {
     border: 5px solid black;
-    margin: 20px;
+    margin: 15px;
     padding: 30px;
     border-radius: 20px;
 }
