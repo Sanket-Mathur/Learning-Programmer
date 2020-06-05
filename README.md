@@ -1,3 +1,10 @@
-# Learning Programmer
+# Learning Programmer - Blogs by Sanket Mathur
+### Website will be going online soon
 
-Learning Programmer - Blogs by Sanket Mathur
+![Screenshot of index page](/display/ScreenshotIndex.png)
+
+```javascript
+if ( YouLikedIt().value == true ) {
+	StarTheRepo();
+}
+```
