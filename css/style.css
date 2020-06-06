@@ -422,25 +422,26 @@ div.navbar-header {
     color: inherit;
 }
 #blogs .blogs-cont a:hover section {
-    box-shadow: 5px 5px 0px red;
+    box-shadow: 3px 3px 10px 3px black;
 }
 #blogs .blogs-cont a section {
     background: #e6e6e6;
-    border: 2px solid black;
-    padding: 20px;
     margin: 10px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 0px green;
+    box-shadow: 1px 1px 5px 1px black;
+}
+#blogs .blogs-cont a section img {
+    width: 100%;
 }
 #blogs.styledark .blogs-cont a section {
     background: #333333;
 }
 #blogs .blogs-cont a section p {
     text-align: justify;
+    margin: 0 10px;
 }
 @media (min-width: 992px) {
     #blogs .blogs-cont a section {
-        height: 330px;
+        height: 450px;
     }
 }
 @media (min-width: 768px) and (max-width:991px) {
