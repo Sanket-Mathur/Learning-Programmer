@@ -437,11 +437,15 @@ div.navbar-header {
     margin: 10px;
     box-shadow: 1px 1px 5px 1px black;
 }
-#blogs .blogs-cont a section img {
+#blogs .blogs-cont a section>img {
     width: 100%;
 }
 #blogs.styledark .blogs-cont a section {
     background: #333333;
+}
+#blogs .blogs-cont .rating {
+    float: right;
+    margin: -25px 10px 0 0;
 }
 #blogs .blogs-cont a section p {
     text-align: justify;
@@ -518,6 +522,13 @@ div.navbar-header {
 }
 #blog-page #cont h1, h3, h4 {
     font-weight: bold;
+}
+#blog-page .rating {
+    float: right;
+    margin-top: -20px;
+}
+#blog-page .rating img {
+    cursor: pointer;
 }
 #blog-page textarea {
     resize: none;

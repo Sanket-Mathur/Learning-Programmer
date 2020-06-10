@@ -30,6 +30,53 @@ document.addEventListener("DOMContentLoaded",
     
         document.querySelector("#submit").onclick = validateEMAIL
     
+        function ratings(star) {
+            if (star == 1) {
+                document.getElementById("s1").src = "../images/star(2).png";
+                document.getElementById("s2").src = "../images/star(1).png";
+                document.getElementById("s3").src = "../images/star(1).png";
+                document.getElementById("s4").src = "../images/star(1).png";
+                document.getElementById("s5").src = "../images/star(1).png";
+            }
+            else if (star == 2) {
+                document.getElementById("s1").src = "../images/star(2).png";
+                document.getElementById("s2").src = "../images/star(2).png";
+                document.getElementById("s3").src = "../images/star(1).png";
+                document.getElementById("s4").src = "../images/star(1).png";
+                document.getElementById("s5").src = "../images/star(1).png";
+            }
+            else if (star == 3) {
+                document.getElementById("s1").src = "../images/star(2).png";
+                document.getElementById("s2").src = "../images/star(2).png";
+                document.getElementById("s3").src = "../images/star(2).png";
+                document.getElementById("s4").src = "../images/star(1).png";
+                document.getElementById("s5").src = "../images/star(1).png";
+            }
+            else if (star == 4) {
+                document.getElementById("s1").src = "../images/star(2).png";
+                document.getElementById("s2").src = "../images/star(2).png";
+                document.getElementById("s3").src = "../images/star(2).png";
+                document.getElementById("s4").src = "../images/star(2).png";
+                document.getElementById("s5").src = "../images/star(1).png";
+            }
+            else if (star == 5) {
+                document.getElementById("s1").src = "../images/star(2).png";
+                document.getElementById("s2").src = "../images/star(2).png";
+                document.getElementById("s3").src = "../images/star(2).png";
+                document.getElementById("s4").src = "../images/star(2).png";
+                document.getElementById("s5").src = "../images/star(2).png";
+            }
+
+        }
+    
+        var average = 4.2;
+        ratings(Math.round(average));
+        document.querySelector("#s1").onclick = () => { ratings(1) };
+        document.querySelector("#s2").onclick = () => { ratings(2) };
+        document.querySelector("#s3").onclick = () => { ratings(3) };
+        document.querySelector("#s4").onclick = () => { ratings(4) };
+        document.querySelector("#s5").onclick = () => { ratings(5) };
+    
         function getTopics() {
             
             var text = document.querySelector("textarea");
