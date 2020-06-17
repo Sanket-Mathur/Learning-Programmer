@@ -367,7 +367,7 @@ div.navbar-header {
     padding: 60px 10px;
 }
 #index.styledark .content {
-    background-color: #106610;
+    background-color: #004466;
     color: white;
 }
 #index .content h4 {
@@ -390,27 +390,32 @@ div.navbar-header {
     background: orange;
     color: black;
 }
-#index .sub-divs {
-    border: 5px solid black;
-    margin: 15px;
-    padding: 30px;
-    border-radius: 20px;
+#index .learn {
+    padding: 60px 10px;
+    background-color: #e6e6e6;
 }
-#index .sub-divs img {
-    margin-left: 5vw;
+#index.styledark .learn {
+    background-color: #106610;
 }
-#index .sub-divs #portfolio {
+#index .learn a {
+    text-decoration: none;
     color: inherit;
 }
-#index #learn a {
-    color: black;
-    text-decoration: none;
-}
-#index.styledark #learn a {
-    color: white;
-}
-#index #learn a:hover {
+#index .learn a:hover {
     color: #8c8c8c;
+}
+#index .aboutme {
+    padding: 60px 10px;
+    background-color: #e6e6e6;
+}
+#index.styledark .aboutme {
+    background-color: #106610;
+}
+#index .aboutme h4 {
+    justify-content: center;
+    text-align: center;
+    margin: 50px 0 50px 0;
+    font-weight: 100;
 }
 
 /* Blogs Page */
