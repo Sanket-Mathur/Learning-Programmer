@@ -363,18 +363,18 @@ div.navbar-header {
     }
 }
 #index .content {
-    background-color: lightgreen;
+    background-color: white;
+    padding: 60px 10px;
 }
 #index.styledark .content {
     background-color: #106610;
     color: white;
 }
 #index .content h4 {
-    text-align: justify;
+    justify-content: center;
+    text-align: center;
+    margin: 50px 0 50px 0;
     font-weight: 100;
-}
-#index .readmore-contain {
-    padding: 30px;
 }
 #index .readmore {
     background: black;
@@ -384,19 +384,11 @@ div.navbar-header {
     text-decoration: none;
     font-weight: bold;
     transition: 0.5s;
+    border-radius: 10px;
 }
 #index .readmore:hover {
     background: orange;
     color: black;
-}
-#index #content2 {
-    background-color: white;
-}
-#index.styledark #content2 {
-    background-color: #004466;
-}
-#index .content #content2 .readmore {
-    border-color: lightgreen;
 }
 #index .sub-divs {
     border: 5px solid black;
