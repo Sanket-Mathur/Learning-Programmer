@@ -373,7 +373,7 @@ div.navbar-header {
 #index .content h4 {
     justify-content: center;
     text-align: center;
-    margin: 50px 0 50px 0;
+    margin: 50px 0;
     font-weight: 100;
 }
 #index .readmore {
@@ -404,6 +404,12 @@ div.navbar-header {
 #index .learn a:hover {
     color: #8c8c8c;
 }
+#index .learn h4 {
+    justify-content: center;
+    text-align: center;
+    margin: 50px 0 20px 0;
+    font-weight: 100;
+}
 #index .aboutme {
     padding: 60px 10px;
     background-color: #e6e6e6;
@@ -414,7 +420,7 @@ div.navbar-header {
 #index .aboutme h4 {
     justify-content: center;
     text-align: center;
-    margin: 50px 0 50px 0;
+    margin: 50px 0;
     font-weight: 100;
 }
 
