@@ -80,7 +80,7 @@
     }
 }
 
-body {
+html, body {
     width: 100%;
     overflow-x: hidden;
 }
@@ -370,11 +370,11 @@ div.navbar-header {
     background-color: #004466;
     color: white;
 }
-#index .content h4 {
+#index h4 {
     justify-content: center;
     text-align: center;
     margin: 50px 0;
-    font-weight: 100;
+    font-weight: 600;
 }
 #index .readmore {
     background: black;
@@ -404,24 +404,12 @@ div.navbar-header {
 #index .learn a:hover {
     color: #8c8c8c;
 }
-#index .learn h4 {
-    justify-content: center;
-    text-align: center;
-    margin: 50px 0 20px 0;
-    font-weight: 100;
-}
 #index .aboutme {
     padding: 60px 10px;
     background-color: #e6e6e6;
 }
 #index.styledark .aboutme {
     background-color: #106610;
-}
-#index .aboutme h4 {
-    justify-content: center;
-    text-align: center;
-    margin: 50px 0;
-    font-weight: 100;
 }
 
 /* Blogs Page */
