@@ -370,7 +370,7 @@ div.navbar-header {
     background-color: #004466;
     color: white;
 }
-#index h4 {
+#index .content h4 {
     justify-content: center;
     text-align: center;
     margin: 50px 0;
@@ -404,9 +404,21 @@ div.navbar-header {
 #index .learn a:hover {
     color: #8c8c8c;
 }
+#index .learn h4 {
+    justify-content: center;
+    text-align: center;
+    margin: 50px 0;
+    font-weight: 600;
+}
 #index .aboutme {
     padding: 60px 10px;
     background-color: #e6e6e6;
+}
+#index .aboutme h4 {
+    justify-content: center;
+    text-align: center;
+    margin: 50px 0;
+    font-weight: 600;
 }
 #index.styledark .aboutme {
     background-color: #106610;
