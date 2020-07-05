@@ -4,11 +4,34 @@ document.addEventListener("DOMContentLoaded",
         
         function DarkMode() {
             var checkbox = document.getElementById('check');
-            if(checkbox.checked == true) {   
+            if(checkbox.checked == true) {
+                document.cookie = "mode=dark";
                 document.querySelector('body').setAttribute("class", "styledark");
             } else {
+                document.cookie = "mode=light"
                 document.querySelector('body').removeAttribute("class");
             }
+        }
+        
+        function getCookie(cname) {
+            var name = cname + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var ca = decodedCookie.split(';');
+            for(var i = 0; i <ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+        
+        if (getCookie('mode') == 'dark') {
+            document.getElementById('check').checked = true;
+            DarkMode();
         }
     
         document.querySelector("#check").onclick = DarkMode;
