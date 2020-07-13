@@ -425,6 +425,11 @@ div.navbar-header {
 }
 
 /* Blogs Page */
+#blogs #search {
+    margin: auto 10px 20px 10px;
+    width: calc(100% - 20px);
+    font-size: 20px;
+}
 #blogs .blogs-cont {
     margin-top: 100px;
 }
