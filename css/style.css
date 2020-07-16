@@ -480,11 +480,28 @@ div.navbar-header {
 #about.styledark a {
     color: #b3ffb3;
 }
-#about #cont h4 {
+#about #cont .about-head {
+    background-color: orange;
+    padding: 10px;
+    display: inline;
     font-weight: bold;
+    padding-left: 0;
+}
+#about #cont .triangle {
+    height: 0;
+    width: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid red;
+    margin-right: 5px;
 }
 #about #email-link {
     font-size: 15px;
+}
+@media (max-width: 767px) {
+    #about #cont .about-head {
+        font-size: 15px;
+    }
 }
 
 /* Unsubscribe Page*/
