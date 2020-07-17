@@ -79,6 +79,14 @@
         text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
     }
 }
+@keyframes error {
+    0% {
+        top: 50px;
+    }
+    100% {
+        top: 125px;
+    }
+}
 
 body {
     width: 100%;
@@ -579,4 +587,34 @@ div.navbar-header {
     right: 20px;
     top: 250px;
     z-index: 1;
+}
+
+/*Error Pages*/
+#error {
+    background-color: #80ffff;
+}
+#error h1 {
+    font-size: 150px;
+    color: orange;
+    position: relative;
+    display: inline;
+    animation: error 1s ease-in-out infinite alternate;
+}
+#error #mid {
+    animation: error 1s ease-in-out infinite alternate-reverse;
+} 
+#error #link {
+    margin-top: 120px;
+    padding-top: 50px;
+    padding-bottom: 0px;
+}
+#error #link a {
+    text-decoration: none;
+    color: white;
+    background: grey;
+    padding: 10px;
+    border-radius: 5px;
+}
+#error #link a:hover {
+    color: black;
 }
