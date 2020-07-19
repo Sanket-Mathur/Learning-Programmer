@@ -19,6 +19,7 @@ const searchbox = () => {
 	var page = {};
 
 	var posts = "snippets/posts.html";
+    var current = 0;
 
 	var insertHtml = function (selector, html) {
 		var targetElem = document.querySelector(selector);
@@ -61,6 +62,18 @@ const searchbox = () => {
             false
         );
         jQuery('html, body').animate({ scrollTop: 0 }, 'fast');
+        current = pno;
+    }
+    
+    page.loadPrev = function () {
+        if (current > 0) {
+            page.loadPage(current - 1);
+        }
+    }
+    page.loadNext = function () {
+        if (current < 1) {
+            page.loadPage(current + 1);
+        }
     }
     
 	global.$page = page;

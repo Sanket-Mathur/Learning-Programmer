@@ -439,6 +439,10 @@ div.navbar-header {
 }
 #blogs #page-number {
     cursor: pointer;
+    font-size: 30px;
+}
+#blogs #page-number a {
+    margin: auto 10px;
 }
 #blogs #search {
     margin: 100px 10px 20px 10px;
