@@ -433,13 +433,17 @@ div.navbar-header {
 }
 
 /* Blogs Page */
+#blogs #loading {
+    margin: 23%;
+    transform: scale(1.5);
+}
+#blogs #page-number {
+    cursor: pointer;
+}
 #blogs #search {
-    margin: auto 10px 20px 10px;
+    margin: 100px 10px 20px 10px;
     width: calc(100% - 20px);
     font-size: 20px;
-}
-#blogs .blogs-cont {
-    margin-top: 100px;
 }
 #blogs .blogs-cont a {
     text-decoration: none;
@@ -474,7 +478,7 @@ div.navbar-header {
 }
 @media (min-width: 768px) and (max-width:991px) {
     #blogs .blogs-cont a section {
-        height: 290px;
+        height: 420px;
     }
 }
 

@@ -13,3 +13,56 @@ const searchbox = () => {
         }
     }
 }
+
+(function (global) {
+
+	var page = {};
+
+	var posts = "snippets/posts.html";
+
+	var insertHtml = function (selector, html) {
+		var targetElem = document.querySelector(selector);
+		targetElem.innerHTML = html;
+	};
+
+	var showLoading = function (selector) {
+  		var html = "<div id='loading' class='text-center'>";
+ 		html += "<img src='images/ajax-loader.gif'></div>";
+  		insertHtml(selector, html);
+	};
+
+    document.addEventListener("DOMContentLoaded", function (event) {
+
+        showLoading("#cont");
+        $ajaxUtils.sendGetRequest(
+            posts,
+            function (responseText) {
+                var arr = responseText.split('</div>');
+                document.querySelector("#cont").innerHTML = '';
+                for (var i = 0; i < 12 && i < arr.length; i++) {
+                    document.querySelector("#cont").innerHTML += arr[i] + '</div>';
+                }
+            },
+            false
+        );
+    });
+
+    page.loadPage = function (pno) {
+        showLoading("#cont");
+        $ajaxUtils.sendGetRequest(
+            posts,
+            function (responseText) {
+                var arr = responseText.split('</div>');
+                document.querySelector("#cont").innerHTML = '';
+                for (var i = pno*12; i < (pno+1)*12 && i < arr.length; i++) {
+                    document.querySelector("#cont").innerHTML += arr[i];
+                }
+            },
+            false
+        );
+        jQuery('html, body').animate({ scrollTop: 0 }, 'fast');
+    }
+    
+	global.$page = page;
+
+})(window);
